@@ -17,7 +17,7 @@ void main() {
     label.setForeground(new Color(255, 255, 255));
     frame.getContentPane().setBackground(new Color(20, 20, 20));
 
-    if (cale.get(Calendar.DATE) == 17) {
+    if ((day + 1) - Month == 17) {
 
         label = new JLabel("HAPPY BIRTHDAY Man: " + text, SwingConstants.CENTER);
     }
