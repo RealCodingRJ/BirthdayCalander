@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -34,6 +36,13 @@ void main () {
 
  Window n = new Window();
  n.setVisible(true);
+ n.addWindowListener(new WindowAdapter() {
+     @Override
+     public void windowOpened(WindowEvent e) {
+         super.windowOpened(e);
+         System.exit(0);
+     }
+ });
 }
 
 private JLabel getJLabel(int day, int Month) {
