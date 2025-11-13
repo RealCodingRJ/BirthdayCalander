@@ -27,7 +27,7 @@ void main() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 label.setText("Happy Birthday");
-
+                frame.getContentPane().setBackground(new Color(255, 0,0));
                 super.mouseClicked(e);
             }
         });
